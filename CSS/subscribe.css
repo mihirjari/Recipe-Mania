@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+}
+header{
+    height: 100vh;
+    background: url('../images/subscribe-form-background.jpg');
+    background-size: cover;
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 300px;
+    height: 70px;
+}
+
+.logo-container{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    padding: 20px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-description{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#subscribe{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: white;
+    font-size: 2em;
+}
+
+input{
+    padding: 15px 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 3px solid black;
+}
+
+#submitbtn{
+    background-color: #303a52;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    transition: 0.3s ease;
+    padding: 10px 10px;
+}
+
+#submitbtn:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.479);
+}
+
+#errormsg{
+    padding: 20px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    background-color: black;
+}

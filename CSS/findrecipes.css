@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+}
+header{
+    height: 100vh;
+    background: url("../images/page2hero-image.jpg");
+    background-size: cover;
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo-container{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo{
+    width: 300px;
+    height: 70px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    padding: 20px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-description h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 5em;
+    text-align: center;
+}
+#hero-btn1{
+   position: relative;
+   left: 33%;
+   padding: 20px 30px;
+   margin-top: 25px;
+   background-color: rgba(255, 255, 255, 0.582);
+   border: none;
+}
+#hero-btn1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/*seacrh-section*/
+
+#search-section{
+    margin: 50px auto;
+   
+    
+}
+#search-section p{
+    text-align: center;
+}
+input{
+    padding: 15px 10px;
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+#recipe-search-btn{
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #303a52;
+    color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.results{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 250vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.column{
+    flex: 25%;
+    margin: 10px;
+    border: 1px solid #ededed;
+    max-width: 400px;
+    max-height: 572px;
+ 
+}
+.recipe-image{
+    width: 100%;
+    object-fit: cover;
+}
+.recipe-body{
+    padding: 20px 20px;
+    text-align: center;
+}
+.recipe-body h3{
+    padding: 10px 0;
+}
+.recipe-body p{
+    padding: 10px 0;
+}
+#readmore{
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #303a52;
+    transition: 0.3s ease;
+}
+#readmore:hover{
+    transform: scale(1.05);
+    /* box-shadow: 0 0 40px -10px rgba(0,0,0,0.5); */
+    box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.479);
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    background-color: black;
+}
+
+.errormsg{
+    text-align: center;
+    color: red;
+    padding: 50px 30px;
+    width: 60%;
+    margin: 0 auto;
+}
